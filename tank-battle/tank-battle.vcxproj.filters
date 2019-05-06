@@ -1,30 +1,144 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="源文件">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="头文件">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="资源文件">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{fb4b582e-333e-45a8-a6b9-53163bd4fcae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="游戏控制">
+      <UniqueIdentifier>{fa97ae4f-42d8-4910-94bd-65ad81ec154d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="地图">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="炮弹">
+      <UniqueIdentifier>{aec336b1-cdb4-48d1-a4f3-ea4a354cba82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="墙">
+      <UniqueIdentifier>{3c8f71d2-fa7c-4b37-a8c4-6a7adb4a29cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克">
+      <UniqueIdentifier>{9c5a485e-86f6-4027-a5e2-2119b7c8838b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="边界">
+      <UniqueIdentifier>{4e9efdb0-c7cf-4207-8281-e135e32a65a9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pch.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="include\target.h">
+      <Filter>地图</Filter>
+    </ClInclude>
+    <ClInclude Include="include\map.h">
+      <Filter>地图</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tank.h">
+      <Filter>坦克</Filter>
+    </ClInclude>
+    <ClInclude Include="include\playertank.h">
+      <Filter>坦克</Filter>
+    </ClInclude>
+    <ClInclude Include="include\bloodwall.h">
+      <Filter>墙</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hardwall.h">
+      <Filter>墙</Filter>
+    </ClInclude>
+    <ClInclude Include="include\softwall.h">
+      <Filter>墙</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wall.h">
+      <Filter>墙</Filter>
+    </ClInclude>
+    <ClInclude Include="include\boundary.h">
+      <Filter>边界</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dot.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\enums.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rect.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\control.h">
+      <Filter>游戏控制</Filter>
+    </ClInclude>
+    <ClInclude Include="include\welcome.h">
+      <Filter>游戏控制</Filter>
+    </ClInclude>
+    <ClInclude Include="include\enemytank.h">
+      <Filter>坦克</Filter>
+    </ClInclude>
+    <ClInclude Include="include\bullet.h">
+      <Filter>炮弹</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="pch.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="source\tank.cpp">
+      <Filter>坦克</Filter>
     </ClCompile>
-    <ClCompile Include="tank-battle.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="source\playertank.cpp">
+      <Filter>坦克</Filter>
+    </ClCompile>
+    <ClCompile Include="source\bloodwall.cpp">
+      <Filter>墙</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hardwall.cpp">
+      <Filter>墙</Filter>
+    </ClCompile>
+    <ClCompile Include="source\softwall.cpp">
+      <Filter>墙</Filter>
+    </ClCompile>
+    <ClCompile Include="source\wall.cpp">
+      <Filter>墙</Filter>
+    </ClCompile>
+    <ClCompile Include="source\boundary.cpp">
+      <Filter>边界</Filter>
+    </ClCompile>
+    <ClCompile Include="source\dot.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="source\utils.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rect.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="source\welcome.cpp">
+      <Filter>游戏控制</Filter>
+    </ClCompile>
+    <ClCompile Include="source\enemytank.cpp">
+      <Filter>坦克</Filter>
+    </ClCompile>
+    <ClCompile Include="source\control.cpp">
+      <Filter>游戏控制</Filter>
+    </ClCompile>
+    <ClCompile Include="source\target.cpp">
+      <Filter>地图</Filter>
+    </ClCompile>
+    <ClCompile Include="source\map.cpp">
+      <Filter>地图</Filter>
+    </ClCompile>
+    <ClCompile Include="source\map_1.cpp">
+      <Filter>地图</Filter>
+    </ClCompile>
+    <ClCompile Include="source\map_2.cpp">
+      <Filter>地图</Filter>
+    </ClCompile>
+    <ClCompile Include="source\bullet.cpp">
+      <Filter>炮弹</Filter>
+    </ClCompile>
+    <ClCompile Include="source\friendfunction.cpp">
+      <Filter>utils</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

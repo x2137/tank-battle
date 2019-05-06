@@ -84,13 +84,14 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp14</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -114,7 +115,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -123,6 +124,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp14</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -151,16 +153,45 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="pch.h" />
+    <ClInclude Include="include\bloodwall.h" />
+    <ClInclude Include="include\boundary.h" />
+    <ClInclude Include="include\bullet.h" />
+    <ClInclude Include="include\control.h" />
+    <ClInclude Include="include\dot.h" />
+    <ClInclude Include="include\enemytank.h" />
+    <ClInclude Include="include\enums.h" />
+    <ClInclude Include="include\hardwall.h" />
+    <ClInclude Include="include\map.h" />
+    <ClInclude Include="include\playertank.h" />
+    <ClInclude Include="include\rect.h" />
+    <ClInclude Include="include\softwall.h" />
+    <ClInclude Include="include\tank.h" />
+    <ClInclude Include="include\target.h" />
+    <ClInclude Include="include\utils.h" />
+    <ClInclude Include="include\wall.h" />
+    <ClInclude Include="include\welcome.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="pch.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="tank-battle.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="source\bloodwall.cpp" />
+    <ClCompile Include="source\boundary.cpp" />
+    <ClCompile Include="source\bullet.cpp" />
+    <ClCompile Include="source\control.cpp" />
+    <ClCompile Include="source\dot.cpp" />
+    <ClCompile Include="source\enemytank.cpp" />
+    <ClCompile Include="source\friendfunction.cpp" />
+    <ClCompile Include="source\hardwall.cpp" />
+    <ClCompile Include="source\map.cpp" />
+    <ClCompile Include="source\map_1.cpp" />
+    <ClCompile Include="source\map_2.cpp" />
+    <ClCompile Include="source\playertank.cpp" />
+    <ClCompile Include="source\rect.cpp" />
+    <ClCompile Include="source\softwall.cpp" />
+    <ClCompile Include="source\tank.cpp" />
+    <ClCompile Include="source\target.cpp" />
+    <ClCompile Include="source\utils.cpp" />
+    <ClCompile Include="source\wall.cpp" />
+    <ClCompile Include="source\welcome.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
